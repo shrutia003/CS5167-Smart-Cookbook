@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="icons8-cook-65.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="/js/main.js"></script>
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/pages.css" rel="stylesheet" />
+    <link href="/css/sec_device.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/35585c6ead.js" crossorigin="anonymous"></script>
+    <title>Smart Cookbook</title>
+  </head>
+  <body>
+    <div class="header-info">
+      <h1>Smart Cookbook</h1>
+      <h3>Shruti Asolkar</h3>
+      <a href="https://sites.google.com/view/shrutiasolkar/projects/cs5167-smart-cookbook">Project Documentation and Designs</a>
+    </div>
+    <br><br>
+    <div class="root-container">
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="grid-item navigation-pane">
+            <ul>
+              <li><button class="styled-button" type="button" id="homebtn" onclick="showHomePage()">Home</button></li>
+              <li><button class="styled-button" type="button" id="searchbtn" onclick="showSearchPage()">Search Recipes</button></li>
+              <li><button class="styled-button" type="button" id="findbtn" onclick="showFindPage()">Find My Groceries</button></li>
+              <li><button class="styled-button" type="button" id="defbtn" onclick="showDefaultPage()">Exit</button></li>
+            </ul>
+            <div class="search-bar">
+              <input type="text" id="search" placeholder="What do you want to find?">
+              <button id="search-button">Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="item1">
+          <div class="home-page" id="default-page">
+            <h3>Welcome to Smart CookBook!</h3>
+          </div>
+          <div class="home-page" id="home-page">
+            <div class="nested-grid">
+              <div class="nested-item">
+                <h4>Recent Searches</h4>
+                <h4>Butter Chicken</h4>
+                <p>Non-Vegetarian | Intermediate | 45 minutes</p>
+                <h4>Falafel</h4>
+                <p>Vegetarian | Intermediate | 35 minutes</p>
+              </div>
+              <div class="nested-item">
+                <h4>Recipes You Might Like</h4>
+                <h4>Buckwheat Noodle Salad</h4>
+                <p>Vegetarian | Easy | 25 minutes</p>
+              </div>
+              <div class="nested-item">
+                <h4>You Made This Recently!</h4>
+                <h4>Vegetarian Enchiladas</h4>
+                <p>Vegetarian | Easy | 70 minutes</p>
+              </div>
+            </div> 
+          </div>
+          <div class="search-page" id="search-page">
+            <div class="flex-container">
+              <div class="left-grid">
+                <label for="Diet">Diet Filter</label>
+                <select id="Diet">
+                  <option value="Vegetarian">Vegetarian</option>
+                  <option value="Non-Vegetarian">Non-Vegetarian</option>
+                  <option value="Vegan">Vegan</option>
+                  <option value="Pescatarian">Pescatarian</option>
+                </select>
+                <label for="Complexity">Complexity Filter</label>
+                <select id="Complexity">
+                  <option value="Easy">Easy</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Hard">Hard</option>
+                </select>
+                <label for="Cuisine">Cuisine Filter</label>
+                <select id="Cuisine">
+                  <option value="Indian">Indian</option>
+                  <option value="Italian">Italian</option>
+                  <option value="Mediterranean">Mediterranean</option>
+                  <option value="American">American</option>
+                  <option value="Japanese">Japanese</option>
+                  <option value="Mexican">Mexican</option>
+                  <option value="English">English</option>
+                </select>
+                <button class="styled-button" type="button" id="filterbtn" onclick="showFilterRes()">Apply Filters</button>
+              </div>
+              <div class="right-grid" id="right-grid">
+                <h4>Filtered Results: </h4>
+              </div>
+            </div>
+          </div>
+          <div class="find-page" id="find-page">
+            <img src="map2.jpg" width="700" height="370" alt="Map" usemap="#workmap">
+            <map name="workmap">
+              <area shape="circle" coords="260, 252, 10" href="https://www.yelp.com/biz/riddle-road-market-cincinnati">
+              <area shape="circle" coords="220, 230, 10" href="https://www.uc.edu/campus-life/tuc/dining/convenience-store.html">
+              <area shape="circle" coords="80, 213, 10" href="https://www.yelp.com/biz/d-and-d-mart-cincinnati">
+            </map>
+          </div>
+        </div>
+      </div>
+  
+      <div class="phone" id="phone">
+        <div class="phoneCamera" id="phoneCamera"></div>
+        <div class="phoneScreen" id="phoneScreen">
+          <div id="screenContents"></div>
+        </div>
+        <div id="phoneNav" class="flex-container2"> 
+          <button class="styled-button2" type="button" id="phoneHomeButton" onclick="showHomeOnPhone()">
+            <i class="fa-solid fa-house fa-xl"></i>
+            <p>Home</p>
+          </button>
+          <button class="styled-button2" type="button" id="showRecipesButton" onclick="showRecipeOnPhone()">
+            <i class="fa-solid fa-fire-burner fa-xl"></i>
+            <p>Recipes</p>
+          </button>
+          <button class="styled-button2" type="button" id="showIngredientsButton" onclick="showIngredientsOnPhone()">
+            <i class="fa-solid fa-mortar-pestle fa-xl"></i>
+            <p>Ingredients</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+.header-info {
+  text-align: center;
+  color: #000000;
+  padding: 20px; 
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 3px solid #333;
+}
+
+.header-info a {
+  text-decoration: underline;
+  color: #eb8643; 
+  transition: color 0.3s; 
+}
+
+.header-info a:hover {
+  color: #a55222;
+}
+
+.root-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px; 
+  max-width: 770px;  
+  min-height: 540px;
+  margin: 75px;
+  padding: 20px; 
+  border: 1px solid #333; 
+  background-color: #e6a148; 
+}
+
+.grid-item {
+  background-color: #f1cc7b;
+  padding: 20px; 
+  border: 1px solid #f1cc7b; 
+  max-height: 170px;
+}
+
+.item1 {
+  background-color: #f1cc7b;
+  padding: 20px;
+  border: 1px solid #f1cc7b;
+  grid-row: span 20;
+  text-align: center;
+}
+
+/* .item2 {
+  background-color: #f0dcb3;
+  padding: 5px;
+  grid-column: span 1;
+  border: 1px solid #b18f45;
+  max-height: 80%;
+  max-width: 33%;
+} */
+
+.nested-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.nested-item {
+  background-color: #f0dcb3;
+  padding: 5px;
+  max-height: 250px;
+}
+
+/* .grid-item2 {
+  background-color: #614a19; 
+  padding: 50px;
+  border: 1px solid #f1cc7b; 
+  max-height: 200px;
+  margin-top: -50px;
+} */
+
+.navigation-pane {
+  background-color: #f1cc7b;
+  padding: 10px; 
+  border-radius: 5px; 
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.navigation-pane ul {
+  margin-top: 0px;
+  list-style-type: none; 
+  padding: 0;
+  margin-left: 50px;
+}
+
+.navigation-pane li {
+  display: inline-block; 
+  margin-right: 35px; 
+  margin-top: 10px;
+}
+
+.styled-button {
+  background-color: #FFA500;
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 14px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.styled-button:hover {
+  background-color: #753d1d; 
+}
+
+.search-bar {
+  margin-left: 20px;
+  display: inline;
+  vertical-align: middle;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#search-button {
+  padding: 10px 20px; 
+  background-color: #FFA500; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 14px; 
+  margin-left: 10px; 
+}
+
+#search-button:hover {
+  background-color: #753d1d;
+}
+
+
+
+

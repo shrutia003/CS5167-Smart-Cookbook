@@ -1,0 +1,54 @@
+.phone {
+    color: black;
+    margin-top: 100px;
+    height: 570px;
+    width: 330px;
+    outline: 2px solid black;
+}
+  
+.phoneCamera {
+    color: black;
+    height: 8px;
+    width: 95%;
+}
+  
+.phoneScreen {
+    margin-left: 8px;
+    color: black;
+    height: 480px;
+    width: 95%;
+    outline: 2px solid black;
+    max-height: 480px; /* Set the maximum height for the div */
+    overflow-y: auto; /* Add vertical scroll when content overflows */
+}
+
+.flex-container2 {
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: row;
+}
+  
+.styled-button2 {
+    background-color: #47453f;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    max-height: 65px;
+    margin-right: 10px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.styled-button2:hover {
+    background-color: #807168; 
+}
+  
+.phoneIcons {
+    margin-left: 15px;
+    height: 20%;
+    width: 10%;
+}

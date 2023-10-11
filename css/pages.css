@@ -1,0 +1,40 @@
+.home-page {
+    display: none;
+    text-align: center;
+}
+
+.search-page {
+    display: none;
+    text-align: center;
+}
+
+/* .filter-style {
+    display: inline;
+    max-width: 30%;
+    text-align: left;
+    margin: 10px;
+} */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 350px;
+    border: 1px solid #f1cc7b;
+}
+
+.left-grid {
+    flex: 1;
+    max-width: 35%;
+    text-align: left;
+    margin: 10px;
+}
+
+.right-grid {
+    flex: 1;
+    text-align: center;
+}
+
+.find-page {
+    display: none;
+    text-align: center;
+}
